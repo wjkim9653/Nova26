@@ -10,9 +10,9 @@
 
 ## 구조
 
-미션마다 독립 디렉터리로 구현하고, 관련 문서는 `docs/`에 둔다.
+미션 구현은 `source/` 아래 미션별 디렉터리에, 관련 문서는 `docs/`에 둔다.
 
 ```
-docs/                 대회·미션 문서
-mission-1-react/      미션 1 구현 (예정)
+docs/                          대회·미션 문서
+source/react-medical-agent/    미션 1 구현 (예정)
 ```

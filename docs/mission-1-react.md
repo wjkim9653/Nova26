@@ -15,7 +15,14 @@ ReAct 방식으로 도구를 호출해 환자 질문에 답하는 간단한 의�
 - `get_patient_temperature(patient_id)` — 가상 환자 체온을 화씨(°F)로 반환
 - `fahrenheit_to_celsius(temperature)` — 화씨 → 섭씨 변환
 
-환자 데이터는 가상 데이터로 구성.
+## 환자 데이터
+
+미션 1은 체온 조회만 하므로 별도 데이터셋 없이 **직접 만든 소규모 가상 환자 딕셔너리**로 충분.
+
+- 필드 예: `patient_id`, `name`, `age`, `sex`, `temperature_f`
+- 값은 임상 참고범위로 현실감 있게: 정상 ≈ 98.6°F(37°C), **발열 ≥ 100.4°F(38°C)**
+- 예시 `P001 = 100.4°F` (= 38.0°C, 발열 경계값) — 교수님 예시와 일치
+- (참고) 이후 실제 EHR 수준의 합성 데이터가 필요하면 **Synthea**(MITRE, Apache-2.0) 등 활용 가능
 
 ## 예시
 
@@ -28,4 +35,4 @@ ReAct 방식으로 도구를 호출해 환자 질문에 답하는 간단한 의�
 
 ## 구현 위치
 
-`mission-1-react/` 아래에 작성 예정.
+`source/react-medical-agent/` 아래에 작성 예정.
