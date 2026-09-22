@@ -35,4 +35,7 @@ ReAct 방식으로 도구를 호출해 환자 질문에 답하는 간단한 의�
 
 ## 구현 위치
 
-`source/react-medical-agent/` 아래에 작성 예정.
+- 구현체: `src/react_medical_agent/` (tools.py, react.py, llm.py, main.py)
+- 데이터셋 + 로더/prep: `data/synthea/` (Synthea 합성 데이터, `dataset.py`, `build_patient_map.py`)
+- 실행 스크립트(`.sh`): `scripts/`
+- 환경 관리: `uv` (`uv run python -m src.react_medical_agent.main`)
